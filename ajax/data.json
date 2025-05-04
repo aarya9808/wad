@@ -1,0 +1,22 @@
+{
+    "New York": {
+        "temperature": 22,
+        "humidity": 60,
+        "condition": "Sunny"
+    },
+    "Mumbai": {
+        "temperature": 30,
+        "humidity": 80,
+        "condition": "Humid"
+    },
+    "Tokyo": {
+        "temperature": 25,
+        "humidity": 65,
+        "condition": "Cloudy"
+    },
+    "London": {
+        "temperature": 67,
+        "humidity":78,
+        "condition": "Rainy"
+    }
+}

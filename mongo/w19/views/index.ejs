@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Student data</title>
+</head>
+
+<body>
+    <h1>Student data</h1>
+    <h2>Total Count: <%= count %>
+    </h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Roll_no</th>
+                <th>WAD marks</th>
+                <th>cc marks</th>
+                <th>dsbda marks</th>
+                <th>ai marks</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <%students.forEach(student=> { %>
+                <tr>
+                    <td>
+                        <%= student.name %>
+                    </td>
+                    <td>
+                        <%= student.roll_no %>
+                    </td>
+                    <td>
+                        <%= student.wad_marks %>
+                    </td>
+                    <td>
+                        <%= student.cc_marks %>
+                    </td>
+                    <td>
+                        <%= student.dsbda_marks %>
+                    </td>
+                    <td>
+                        <%= student.ai_marks %>
+                    </td>
+                </tr>
+
+                <% })%>
+        </tbody>
+
+
+    </table>
+
+
+</body>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive Product Catalog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2 class="heading">Product Catalog</h2>
+
+<!-- Table for desktop -->
+<table id="table">
+  <thead>
+    <tr>
+      <th>Image</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<!-- Cards for mobile -->
+<div id="cards" class="card-container"></div>
+
+<!-- Pagination -->
+<div class="pagination">
+  <button onclick="prev()">prev</button>
+  <!-- <span id="page">Page 1</span> -->
+  <button onclick="next()">next</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

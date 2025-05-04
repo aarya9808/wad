@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Song Table</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Total Songs: <%= count %>
+    </h2>
+    <table>
+        <tr>
+            <th>Song<br>Name</th>
+            <th>Film<br>Name</th>
+            <th>Music<br>Director</th>
+            <th>Singer</th>
+            <th>Actor</th>
+            <th>Actress</th>
+        </tr>
+        <% songs.forEach(song=> { %>
+            <tr>
+                <td>
+                    <%= song.Songname %>
+                </td>
+                <td>
+                    <%= song.Film %>
+                </td>
+                <td>
+                    <%= song.Music_director %>
+                </td>
+                <td>
+                    <%= song.Singer %>
+                </td>
+                <td>
+                    <%= song.Actor || "" %>
+                </td>
+                <td>
+                    <%= song.Actress || "" %>
+                </td>
+            </tr>
+            <% }) %>
+    </table>
+</body>
+
+</html>

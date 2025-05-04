@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+
+  <!-- jQuery Mobile CSS and JS -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+
+  <!-- 🔹 About Me Page -->
+  <div data-role="page" id="about">
+
+    <div data-role="header">
+      <h1>About Me</h1>
+    <img src="https://source.unsplash.com/200x200/?person" alt="My Photo"
+        style="width: 100%; max-width: 200px; border-radius: 10px; display: block; margin: 0 auto 20px;">
+    </div>
+
+    <!-- <div data-role="content">
+    
+        <div data-role="collapsible">
+            <h4>Quick Bio</h4>
+            <p>Hi! I'm Aarya, a passionate developer who loves building simple yet meaningful web projects.</p>
+        </div>
+    
+        <div data-role="collapsible">
+            <h4>Fun Fact</h4>
+            <p>I once built a full project in one night — and it worked like magic!</p>
+        </div>
+    
+        <div data-role="collapsible">
+            <h4>More About Me</h4>
+            <p>I’m currently exploring frontend and product design, and I believe tech should empower creativity.</p>
+        </div>
+    
+    </div> -->
+
+    <div data-role="content">
+      <p>Hello! I'm Aarya. I’m passionate about tech and love building creative digital experiences.</p>
+      <a href="#projects" data-role="button">View Projects</a>
+      <a href="#skills" data-role="button">My Skills</a>
+      <a href="#contact" data-role="button">Contact Info</a>
+    </div>
+    <a href="#" id="showFact" data-role="button">Show Fun Fact</a>
+  
+    <p id="funFact" style="display:none;">
+        I once built a full project in just one night and it actually worked!
+    </p>
+
+    <div data-role="footer">
+      <h4>My Portfolio</h4>
+    </div>
+
+  </div>
+
+  <!-- 🔹 Projects Page -->
+  <div data-role="page" id="projects">
+
+    <div data-role="header">
+      <h1>Projects</h1>
+    </div>
+
+    <div data-role="content">
+      <ul data-role="listview">
+        <li><h2>Project A</h2><p>A web app for women safety alert system.</p></li>
+        <li><h2>Project B</h2><p>A task manager with daily reminders.</p></li>
+        <li><h2>Project C</h2><p>A portfolio site made with jQuery Mobile 😊</p></li>
+      </ul>
+      
+      <a href="#about" data-role="button">Back to About</a>
+    </div>
+
+    <div data-role="footer">
+      <h4>My Projects</h4>
+    </div>
+
+  </div>
+
+  <!-- 🔹 Skills Page -->
+  <div data-role="page" id="skills">
+
+    <div data-role="header">
+      <h1>Skills</h1>
+    </div>
+
+    <div data-role="content">
+      <ul data-role="listview">
+        <li>HTML, CSS, JavaScript</li>
+        <li>Node.js & Express</li>
+        <li>MongoDB</li>
+        <li>jQuery & jQuery Mobile</li>
+        <li>Python, Machine Learning</li>
+      </ul>
+      <a href="#about" data-role="button">Back to About</a>
+    </div>
+
+    <div data-role="footer">
+      <h4>My Skills</h4>
+    </div>
+
+  </div>
+
+  <!-- 🔹 Contact Page -->
+  <div data-role="page" id="contact">
+
+    <div data-role="header">
+      <h1>Contact Info</h1>
+    </div>
+
+    <div data-role="content">
+      <p>Email: aarya@example.com</p>
+      <p>LinkedIn: linkedin.com/in/aaryabadhe</p>
+      <p>GitHub: github.com/aarya-b</p>
+      <a href="#about" data-role="button">Back to About</a>
+    </div>
+
+    <div data-role="footer">
+      <h4>Contact Me</h4>
+    </div>
+
+  </div>
+<script>
+    $(document).on("pagecreate", "#about", function () {
+        $("#showFact").click(function () {
+            $("#funFact").slideToggle(); // toggles visibility with animation
+        });
+    });
+</script>
+
+</body>
+</html>

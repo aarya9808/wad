@@ -1,0 +1,61 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <title> Email form</title>
+</head>
+
+<body>
+    <h1> Welcome to email submission </h1>
+    <input id="emailInput" type="text" placeholder="Enter email" />
+    <input id="usernameInput" type="text" placeholder="Enter username" />
+
+    <button onclick="checkDb()">Submit Data </button>
+    <script src="script.js"></script>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Live Registration Check</title>
+    <style>
+        input {
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .valid {
+            color: green;
+        }
+
+        .invalid {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>User Registration</h2>
+
+    <form>
+        <label>Username:
+            <input type="text" id="username" autocomplete="off">
+            <span id="username-status"></span>
+        </label>
+
+        <label>Email:
+            <input type="email" id="email" autocomplete="off">
+            <span id="email-status"></span>
+        </label>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

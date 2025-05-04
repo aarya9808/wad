@@ -1,0 +1,32 @@
+[
+    {
+        "name": "product-1",
+        "price":8236,
+        "image": "/images/image.png"
+    },
+    {
+        "name": "product-2",
+        "price":22432,
+        "image": "www.example.com/images/product-2.jpg"
+    },
+    {
+        "name": "product-3",
+        "price":783,
+        "image": "www.example.com/images/product-3.jpg"
+    },      
+    {
+        "name": "product-4",
+        "price":23824,
+        "image": "www.example.com/images/product-4.jpg"
+    },
+    {
+        "name": "product-5",
+        "price":23824,
+        "image": "www.example.com/images/product-5.jpg"
+    },
+    {
+        "name": "product-6",
+        "price":23824,
+        "image": "www.example.com/images/product-6.jpg"
+    }
+]

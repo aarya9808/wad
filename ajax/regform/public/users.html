@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>All Users</title>
+</head>
+
+<body>
+    <h2>Registered Users</h2>
+    <ul id="userList"></ul>
+
+    <script>
+        fetch('/users')
+            .then(res => res.json())
+            .then(data => {
+                const ul = document.getElementById('userList');
+                data.forEach(user => {
+                    const li = document.createElement('li');
+                    li.textContent = `${user.name} (${user.email}, ${user.city})`;
+                    ul.appendChild(li);
+                });
+            });
+    </script>
+</body>
+
+</html>

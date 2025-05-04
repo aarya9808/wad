@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User List</title>
+    <style>
+        ul{
+            padding: 40px;
+            margin:25px;
+            color:purple;
+            font-size: 20px;
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>User List</h1>
+    <ul id="user-list"></ul>
+
+    <script>
+        fetch('/users')
+            .then(response => response.json())
+            .then(users => {
+                const list = document.getElementById('user-list');
+                users.forEach(user => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `${user.name} : ${user.email}`;
+                    list.appendChild(li);
+                });
+            });
+    </script>
+</body>
+
+</html>

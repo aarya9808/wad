@@ -1,0 +1,65 @@
+/* Table styling */
+table {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto 10px;
+  border-collapse: collapse;
+}
+body {
+  color: rgb(153, 51, 117);
+  background-color:lavenderblush /* Light gray background */
+}
+
+.heading{
+  text-align: center;
+}
+
+th, td {
+  border: 1px solid rgb(37, 188, 215);
+  padding: 10px;
+  text-align: left;
+}
+
+/* Card layout hidden by default (visible on mobile) */
+.card-container {
+  display: none;
+  width: 50%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.card {
+  border: 1px solid gray;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+  background: #f9f9f9;
+}
+
+.card img {
+  width: 80px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Pagination styling */
+.pagination {
+  margin-top: 10px;
+  text-align: center;
+}
+
+button {
+  padding: 5px 10px;
+  margin: 0 5px;
+}
+
+/* Responsive switch: hide table, show cards */
+@media (max-width: 768px) {
+  table {
+    display: none;
+  }
+
+  .card-container {
+    display:block;
+  }
+}

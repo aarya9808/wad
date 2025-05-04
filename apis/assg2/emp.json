@@ -1,0 +1,51 @@
+[
+    {
+        "emp_id":1,
+        "emp_name":"John Doe",
+        "emp_designation":"Software Engineer",
+        "emp_department":"HR",
+        "emp_salary":50000,
+        "emp_image":"https://example.com/images/john.jpg"
+
+    },
+    {"emp_id":2,
+        "emp_name":"Jane Smith",
+        "emp_designation":"Project Manager",
+        "emp_department":"IT",
+        "emp_salary":70000,
+        "emp_image":"https://example.com/images/jane.jpg"
+    },
+    {
+        "emp_id":3,
+        "emp_name":"Tom Brown",
+        "emp_designation":"Data Analyst",
+        "emp_department":"Finance",
+        "emp_salary":60000,
+        "emp_image":"https://example.com/images/tom.jpg"
+    },  
+    {
+        "emp_id":4,
+        "emp_name":"Alice Johnson",
+        "emp_designation":"UX Designer",
+        "emp_department":"Design",
+        "emp_salary":55000,
+        "emp_image":"https://example.com/images/alice.jpg"
+    },
+    {
+        "emp_id":5,
+        "emp_name":"Bob Lee",
+        "emp_designation":"DevOps Engineer",
+        "emp_department":"IT",
+        "emp_salary":65000,
+        "emp_image":"https://example.com/images/bob.jpg"
+    },
+    {
+        "emp_id":6,
+        "emp_name":"Charlie Brown",
+        "emp_designation":"Marketing Specialist",
+        "emp_department":"Marketing",
+        "emp_salary":58000,
+        "emp_image":"https://example.com/images/charlie.jpg"
+    }
+
+]
