@@ -1,36 +1,28 @@
-const express = require("express");
-const path = require("path");
+import express from "express";
+import path from "path";
+import { fileURLToPath } from "url";
+
 const app = express();
 const PORT = 3000;
 
-let users = [];
+// Setup for __dirname in ES modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-app.use(express.static('public'));
+// Middleware to parse JSON and serve static files
 app.use(express.json());
+app.use(express.static(__dirname));
 
-app.post("/register", (req, res) => {
-  const { username, email } = req.body;
-  const exists = users.some(
-    (u) => u.username === username || u.email === email
-  );
-  if (exists) return res.status(400).send("User exists");
-  users.push(req.body);
-  res.sendStatus(200);
-});
+// Routes
+app.get("/", (req, res) => res.sendFile(path.join(__dirname, "index.html")));
+app.get("/register", (req, res) =>
+  res.sendFile(path.join(__dirname, "register.html"))
+);
+app.get("/users", (req, res) =>
+  res.sendFile(path.join(__dirname, "users.html"))
+);
 
-app.post("/login", (req, res) => {
-  const { username, password } = req.body;
-  const found = users.find(
-    (u) => u.username === username && u.password === password
-  );
-  if (found) res.json({ message: "Login successful" });
-  else res.json({ message: "Invalid credentials" });
-});
-
-app.get("/users", (req, res) => {
-  res.json(users);
-});
-
+// Start server
 app.listen(PORT, () => {
-  console.log(`🚀 Server running at http://localhost:${PORT}`);
+  console.log(`Server running at http://localhost:${PORT}`);
 });

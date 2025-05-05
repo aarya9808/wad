@@ -2,10 +2,10 @@ const express = require("express");
 const app = express();
 const path = require("path");
 
-let tasks = [];
-
 app.use(express.json());
 app.use(express.static('public'));
+
+let tasks = []; 
 
 app.get("/tasks", (req, res) => res.json(tasks));
 

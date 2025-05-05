@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>PICT B.E. Course Structure</title>
+
+    <!-- jQuery and jQuery Mobile -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <style>
+        /* Custom collapsible header colors */
+        .fe-section .ui-collapsible-heading-toggle {
+            background: #cce5ff !important;
+            color: #003366 !important;
+        }
+
+        .se-section .ui-collapsible-heading-toggle {
+            background: #d4edda !important;
+            color: #155724 !important;
+        }
+
+        .te-section .ui-collapsible-heading-toggle {
+            background: #fff3cd !important;
+            color: #856404 !important;
+        }
+
+        .be-section .ui-collapsible-heading-toggle {
+            background: #f8d7da !important;
+            color: #721c24 !important;
+        }
+
+        /* Subject list styles */
+        .subject-title {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .description {
+            margin-left: 10px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        /* Header and footer color */
+        .ui-header,
+        .ui-footer {
+            background-color: #007bff !important;
+            color: white !important;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div data-role="page" id="home">
+        <div data-role="header">
+            <h1>PICT B.E. Course Structure</h1>
+        </div>
+
+        <div data-role="content">
+
+            <!-- FE Section -->
+            <div data-role="collapsible" class="fe-section">
+                <h4>First Year (FE)</h4>
+                <ul data-role="listview">
+                    <li>
+                        <span class="subject-title">Engineering Mathematics-I</span>
+                        <p class="description">Fundamentals of calculus, differential equations, and complex numbers.
+                        </p>
+                    </li>
+                    <li>
+                        <span class="subject-title">Basic Electrical Engineering</span>
+                        <p class="description">Basics of electrical circuits, transformers, and motors.</p>
+                    </li>
+                    <li>
+                        <span class="subject-title">Engineering Physics</span>
+                        <p class="description">Concepts of optics, quantum mechanics, and materials.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- SE Section -->
+            <div data-role="collapsible" class="se-section">
+                <h4>Second Year (SE)</h4>
+                <ul data-role="listview">
+                    <li>
+                        <span class="subject-title">Data Structures</span>
+                        <p class="description">Introduction to arrays, linked lists, trees, and graphs.</p>
+                    </li>
+                    <li>
+                        <span class="subject-title">Computer Organization</span>
+                        <p class="description">Study of microprocessors, memory hierarchy, and instruction sets.</p>
+                    </li>
+                    <li>
+                        <span class="subject-title">Database Management Systems</span>
+                        <p class="description">Relational models, SQL, normalization, and transactions.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- TE Section -->
+            <div data-role="collapsible" class="te-section">
+                <h4>Third Year (TE)</h4>
+                <ul data-role="listview">
+                    <li>
+                        <span class="subject-title">Operating Systems</span>
+                        <p class="description">Processes, threads, memory management, and file systems.</p>
+                    </li>
+                    <li>
+                        <span class="subject-title">Computer Networks</span>
+                        <p class="description">OSI model, TCP/IP, routing, and network security.</p>
+                    </li>
+                    <li>
+                        <span class="subject-title">Web Technologies</span>
+                        <p class="description">HTML, CSS, JavaScript, and server-side scripting.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- BE Section -->
+            <div data-role="collapsible" class="be-section">
+                <h4>Final Year (BE)</h4>
+                <ul data-role="listview">
+                    <li>
+                        <span class="subject-title">Machine Learning</span>
+                        <p class="description">Supervised and unsupervised learning, regression, and classification.</p>
+                    </li>
+                    <li>
+                        <span class="subject-title">Cloud Computing</span>
+                        <p class="description">Virtualization, distributed systems, and cloud architecture.</p>
+                    </li>
+                    <li>
+                        <span class="subject-title">Project Work</span>
+                        <p class="description">Capstone project involving real-world application of learned skills.</p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div data-role="footer">
+            <h4>PICT Pune © 2025</h4>
+        </div>
+    </div>
+
+</body>
+
+</html>

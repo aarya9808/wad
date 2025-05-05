@@ -49,7 +49,7 @@
         async function addTask() {
             const input = document.getElementById('taskInput');
             const task = input.value.trim();
-            if (task) {
+            if (task) { 
                 await fetch('/tasks', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },

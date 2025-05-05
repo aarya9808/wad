@@ -2,99 +2,145 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>My Portfolio</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" /> -->
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            background-color: black;
-            margin: 10px;
+            background: linear-gradient(15deg, rgb(141, 13, 34), rgb(120, 65, 202), orange);
+            margin: 0;
+            padding: 40px 20px;
+            font-family: 'Roboto Mono', monospace;
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
             padding: 30px;
-            color: white;
-            font-family: Arial, sans-serif;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
         }
 
         h1 {
-            font-size: 28px;
-            margin-top: 30px;
-            color: #ffffff;
+            font-size: 30px;
+            margin-bottom: 15px;
+            color: #ff6ec4;
+            text-shadow: 1px 1px #000;
         }
 
         p,
         li {
             font-size: 18px;
-            color: rgb(164, 140, 226);
+            color: #e0dfff;
+            line-height: 1.6;
         }
 
         ul,
         ol {
-            margin-left: 20px;
+            margin-left: 25px;
+        }
+
+        section {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            transition: transform 0.2s  ease;
+        }
+
+        section:hover {
+            transform: scale(1.02);
         }
 
         .skills {
-            background-color: linear-gradient(black, pink);
-            color: aqua;
-            padding: 10px;
-            border-radius: 8px;
+            background: linear-gradient(145deg, #ff9a9e, #fad0c4);
+            color: #000;
+        }
+
+        .skills h1 {
+            color: #2c003e;
         }
 
         footer {
             text-align: center;
-            font-size: 18px;
-            padding: 10px;
-            margin-top: 40px;
-            border-top: 1px solid white;
+            font-size: 16px;
+            padding: 20px;
+            margin-top: 50px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            color: #ccc;
+        }
+
+        strong {
+            color: #ffce54;
+        }
+
+        a {
+            color: #a8edea;
+            text-decoration:wavy;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 
 <body>
-    <header>
-        <h1><strong>Personal Details</strong></h1>
-        <p>I am a passionate developer taking interest in building projects from the ground up.</p>
-    </header>
+    <div class="container">
+        <header>
+            <h1><strong>Personal Details</strong></h1>
+            <p>I am a passionate developer taking interest in building projects from the ground up.</p>
+        </header>
 
-    <section class="skills">
-        <h1><strong>Skills</strong></h1>
-        <ul>
-            <li>Reader</li>
-            <li>Observer</li>
-            <li>Thinker</li>
-            <li>Writer</li>
-        </ul>
-    </section>
+        <section class="skills">
+            <h1><strong>Skills</strong></h1>
+            <ul>
+                <li>Reader</li>
+                <li>Observer</li>
+                <li>Thinker</li>
+                <li>Writer</li>
+            </ul>
+        </section>
 
-    <section>
-        <h1><strong>Projects</strong></h1>
-        <ol>
-            <li>
-                <strong>yourHR</strong>
-                <p>Helps HRs manage applications and shortlist potential candidates.</p>
-            </li>
-            <li>
-                <strong>Coffee Vending Machine Dashboard</strong>
-                <p>Designed an analytics dashboard for coffee consumption tracking.</p>
-            </li>
-        </ol>
-    </section>
+        <section>
+            <h1><strong>Projects</strong></h1>
+            <ol>
+                <li>
+                    <strong>yourHR</strong>
+                    <p>Helps HRs manage applications and shortlist potential candidates.</p>
+                </li>
+                <li>
+                    <strong>Coffee Vending Machine Dashboard</strong>
+                    <p>Designed an analytics dashboard for coffee consumption tracking.</p>
+                </li>
+            </ol>
+        </section>
 
-    <section>
-        <h1><strong>Educational Details</strong></h1>
-        <ul>
-            <li>JEE: 96.34%</li>
-            <li>12th: 87.34%</li>
-            <li>10th: 92.34%</li>
-        </ul>
-    </section>
+        <section>
+            <h1><strong>Educational Details</strong></h1>
+            <ul>
+                <li>JEE: 96.34%</li>
+                <li>12th: 87.34%</li>
+                <li>10th: 92.34%</li>
+            </ul>
+        </section>
 
-    <section>
-        <h1><strong>Contact Info</strong></h1>
-        <p>Email: aatua@gmail.com</p>
-        <p>Contact No.: 3989539</p>
-    </section>
+        <section>
+            <h1><strong>Contact Info</strong></h1>
+            <p>Email: <a href="mailto:aatua@gmail.com">aatua@gmail.com</a></p>
+            <p>Contact No.: 3989539</p>
+        </section>
 
-    <footer>
-        © My Portfolio
-    </footer>
+        <footer>
+            © 2025 My Portfolio | Made with 💙 by Me
+        </footer>
+    </div>
 </body>
 
 </html>
