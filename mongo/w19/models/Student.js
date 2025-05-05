@@ -1,6 +1,6 @@
 const mongoose= require("mongoose");
  const studSchema= new mongoose.Schema({
- name: String,
+name: String,
 roll_no: Number, 
 wad_marks: Number,
 cc_marks: Number,

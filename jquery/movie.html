@@ -1,78 +1,120 @@
 <!DOCTYPE html>
+<html>
 
 <head>
-    <title>movie review</title>
+    <title>Top 5 Movie Reviews</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- jQuery Mobile -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <style>
+        body {
+            background-color: #f2f2f2;
+        }
+
+        .movie-section {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #007acc;
+            margin-top: 0;
+        }
+
+        p {
+            color: #333;
+        }
+
+        .movie-poster {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .ui-header {
+            background-color: #222;
+            color: white;
+            border: none;
+        }
+
+        .ui-title {
+            font-size: 20px;
+        }
+    </style>
 </head>
-<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
 
 <body>
+
     <div data-role="page" id="home">
-        <div data-role="header">
-            <h1>Top 5 Movie reviews of the year</h1>
+        <div data-role="header" data-theme="b" class="ui-header">
+            <h1 class="ui-title">🎬 Top 5 Movie Reviews of the Year</h1>
         </div>
-        
+
         <div data-role="content">
 
-            <h2>Movie1</h2>
-            <ul data-role="list-view">
-                <li>Poster:</li>
-                <img src="" />
-                <p>Genre: Horror</p>
-                <li>Summary:</li>
-                <p>It was based on haunting house</p>
-                <li>Review:</li>
-                <p>I did not like it much</p>
-            </ul>
+            <!-- Movie 1 -->
+            <div class="movie-section">
+                <h2>The Haunting Shadows</h2>
+                <img class="movie-poster" src="https://via.placeholder.com/300x400?text=Horror+Movie"
+                    alt="Horror Movie Poster">
+                <p><strong>Genre:</strong> Horror</p>
+                <p><strong>Summary:</strong> A chilling tale of a family trapped in a haunted mansion with a dark past.
+                </p>
+                <p><strong>Review:</strong> The atmosphere was creepy, but the story lacked depth. Could have been
+                    better.</p>
+            </div>
 
+            <!-- Movie 2 -->
+            <div class="movie-section">
+                <h2>Laugh Factory</h2>
+                <img class="movie-poster" src="https://via.placeholder.com/300x400?text=Comedy+Movie"
+                    alt="Comedy Movie Poster">
+                <p><strong>Genre:</strong> Comedy</p>
+                <p><strong>Summary:</strong> A hilarious sequel paying tribute to Charlie Chaplin's slapstick genius.
+                </p>
+                <p><strong>Review:</strong> A heartwarming and nostalgic comedy that left me smiling.</p>
+            </div>
 
-            <h2>Movie2</h2>
-            <ul data-role="list-view">
-                <li>Poster:</li>
-                <img src="" />
-                <p>Genre: Comedy</p>
-                <li>Summary:</li>
-                <p>It was based on sequels from Charlie Chaplin</p>
-                <li>Review:</li>
-                <p>I did like it.</p>
-            </ul>
+            <!-- Movie 3 -->
+            <div class="movie-section">
+                <h2>Star Chase</h2>
+                <img class="movie-poster" src="https://via.placeholder.com/300x400?text=Sci-Fi+Movie"
+                    alt="Sci-Fi Movie Poster">
+                <p><strong>Genre:</strong> Science Fiction</p>
+                <p><strong>Summary:</strong> A young pilot must save the galaxy from a rogue AI empire.</p>
+                <p><strong>Review:</strong> Action-packed with great visuals. A treat for sci-fi lovers.</p>
+            </div>
 
-            <h2>Movie2</h2>
-            <ul data-role="list-view">
-                <li>Poster:</li>
-                <img src="" />
-                <p>Genre: Comedy</p>
-                <li>Summary:</li>
-                <p>It was based on sequels from Charlie Chaplin</p>
-                <li>Review:</li>
-                <p>I did like it.</p>
-            </ul>
+            <!-- Movie 4 -->
+            <div class="movie-section">
+                <h2>The Painted Veil</h2>
+                <img class="movie-poster" src="https://via.placeholder.com/300x400?text=Drama+Movie"
+                    alt="Drama Movie Poster">
+                <p><strong>Genre:</strong> Drama</p>
+                <p><strong>Summary:</strong> A deeply emotional journey of love and redemption set in 1920s China.</p>
+                <p><strong>Review:</strong> Stunning performances and beautiful cinematography.</p>
+            </div>
 
-            <h2>Movie2</h2>
-            <ul data-role="list-view">
-                <li>Poster:</li>
-                <img src="" />
-                <p>Genre: Comedy</p>
-                <li>Summary:</li>
-                <p>It was based on sequels from Charlie Chaplin</p>
-                <li>Review:</li>
-                <p>I did like it.</p>
-            </ul>
-
-            <h2>Movie2</h2>
-            <ul data-role="list-view">
-                <li>Poster:</li>
-                <img src="" />
-                <p>Genre: Comedy</p>
-                <li>Summary:</li>
-                <p>It was based on sequels from Charlie Chaplin</p>
-                <li>Review:</li>
-                <p>I did like it.</p>
-            </ul>
-
+            <!-- Movie 5 -->
+            <div class="movie-section">
+                <h2>Edge of Tomorrow</h2>
+                <img class="movie-poster" src="https://via.placeholder.com/300x400?text=Action+Movie"
+                    alt="Action Movie Poster">
+                <p><strong>Genre:</strong> Action / Sci-Fi</p>
+                <p><strong>Summary:</strong> A soldier relives the same day in a brutal alien war over and over again.
+                </p>
+                <p><strong>Review:</strong> Smart, thrilling, and incredibly fun. A sci-fi gem!</p>
+            </div>
 
         </div>
+    </div>
 
 </body>
 
